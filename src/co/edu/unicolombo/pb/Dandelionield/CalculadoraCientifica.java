@@ -3373,6 +3373,8 @@ public class CalculadoraCientifica extends JFrame{
 				
 					if (e.getKeyCode() == KeyEvent.VK_ENTER){
 						
+						Equals.setSize(50,50);
+						
 						try {
 						
 							wd = TextedPanel.getText();
@@ -3395,8 +3397,6 @@ public class CalculadoraCientifica extends JFrame{
 							TextResult.setText("Error");
 							
 						}
-						
-						Equals.setSize(50,50);
 						
 					}
 					
@@ -3424,6 +3424,8 @@ public class CalculadoraCientifica extends JFrame{
 				
 						if (e.getKeyCode() == KeyEvent.VK_ENTER){
 							
+							Equals.setSize(50,50);
+							
 							try {
 							
 								ans = Mayth.Redondear(Parser.Calculadora(wd),11);
@@ -3446,9 +3448,9 @@ public class CalculadoraCientifica extends JFrame{
 								
 							}
 							
-							Equals.setSize(50,50);
-							
 						}else if (e.getKeyCode() == KeyEvent.VK_BACK_SPACE){
+							
+							Delete.setSize(50,50);
 							
 							if (wd!="" && wd.length()!=1){
 							
@@ -3564,119 +3566,118 @@ public class CalculadoraCientifica extends JFrame{
 								
 							}
 							
-							Delete.setSize(50,50);
-							
 						}else if (e.getKeyCode() == KeyEvent.VK_NUMPAD0){
+							
+							Zero.setSize(50,50);
 							
 							wd+="0";
 							TextPanel.setText(Adaptable(wd));
 							
-							Zero.setSize(50,50);
-							
 						}else if (e.getKeyCode() == KeyEvent.VK_NUMPAD1){
+							
+							One.setSize(50,50);
 							
 							wd+="1";
 							TextPanel.setText(Adaptable(wd));
 							
-							One.setSize(50,50);
-							
 						}else if (e.getKeyCode() == KeyEvent.VK_NUMPAD2){
+							
+							Two.setSize(50,50);
 							
 							wd+="2";
 							TextPanel.setText(Adaptable(wd));
 							
-							Two.setSize(50,50);
-							
 						}else if (e.getKeyCode() == KeyEvent.VK_NUMPAD3){
+							
+							Three.setSize(50,50);
 			
 							wd+="3";
 							TextPanel.setText(Adaptable(wd));
 							
-							Three.setSize(50,50);
-							
 						}else if (e.getKeyCode() == KeyEvent.VK_NUMPAD4){
+							
+							Four.setSize(50,50);
 							
 							wd+="4";
 							TextPanel.setText(Adaptable(wd));
 							
-							Four.setSize(50,50);
-							
 						}else if (e.getKeyCode() == KeyEvent.VK_NUMPAD5){
+							
+							Five.setSize(50,50);
 							
 							wd+="5";
 							TextPanel.setText(Adaptable(wd));
 							
-							Five.setSize(50,50);
-							
 						}else if (e.getKeyCode() == KeyEvent.VK_NUMPAD6){
+							
+							Six.setSize(50,50);
 							
 							wd+="6";
 							TextPanel.setText(Adaptable(wd));
 							
-							Six.setSize(50,50);
-							
 						}else if (e.getKeyCode() == KeyEvent.VK_NUMPAD7){
+							
+							Seven.setSize(50,50);
 							
 							wd+="7";
 							TextPanel.setText(Adaptable(wd));
 							
-							Seven.setSize(50,50);
-							
 						}else if (e.getKeyCode() == KeyEvent.VK_NUMPAD8){
+							
+							Eight.setSize(50,50);
 							
 							wd+="8";
 							TextPanel.setText(Adaptable(wd));
 							
-							Eight.setSize(50,50);
-							
 						}else if (e.getKeyCode() == KeyEvent.VK_NUMPAD9){
+							
+							Nine.setSize(50,50);
 							
 							wd+="9";
 							TextPanel.setText(Adaptable(wd));
 							
-							Nine.setSize(50,50);
-							
 						}else if (e.getKeyCode() == KeyEvent.VK_E){
+							
+							Euler.setSize(50,50);
 							
 							wd+="e";
 							TextPanel.setText(Adaptable(wd));
 							
-							Euler.setSize(50,50);
-							
 						}else if (e.getKeyCode() == KeyEvent.VK_P){
+							
+							Pi.setSize(50,50);
 							
 							wd+="P";
 							TextPanel.setText(Adaptable(wd));
 							
-							Pi.setSize(50,50);
-							
 						}else if (e.getKeyCode() == KeyEvent.VK_G){
+							
+							Gamma.setSize(50,50);
 							
 							wd+="G";
 							TextPanel.setText(Adaptable(wd));
 							
-							Gamma.setSize(50,50);
-							
 						}else if (e.getKeyCode() == KeyEvent.VK_A){
+							
+							Aureo.setSize(50,50);
 							
 							wd+="A";
 							TextPanel.setText(Adaptable(wd));
 							
-							Aureo.setSize(50,50);
-							
 						}else if (e.getKeyCode() == KeyEvent.VK_X){
+							
+							Multiplication.setSize(50,50);
 							
 							wd+="x";
 							TextPanel.setText(Adaptable(wd));
 							
-							Multiplication.setSize(50,50);
-							
 						}else if (e.getKeyCode() == KeyEvent.VK_Z){
+							
+							Zeta.setSize(50,50);
 							
 							wd+="Z(";
 							TextPanel.setText(Adaptable(wd));
 							
-							Zeta.setSize(50,50);
 							
 						}
 						
@@ -3692,40 +3693,40 @@ public class CalculadoraCientifica extends JFrame{
 				
 				if (ed==true && wd.length()<=limit){
 					
-					if (e.getKeyChar() == '.') {
+					if (e.getKeyChar() == '.'){
+						
+						Dot.setSize(50,50);
 						
 						wd += ".";
 						TextPanel.setText(Adaptable(wd));
 						
-						Dot.setSize(50,50);
-						
 					}else if (e.getKeyChar() == '+'){
+						
+						Addition.setSize(50,50);
 						
 						wd += "+";
 						TextPanel.setText(Adaptable(wd));
 						
-						Addition.setSize(50,50);
-						
 					}else if (e.getKeyChar() == '-'){
+						
+						Sustraction.setSize(50,50);
 						
 						wd += "-";
 						TextPanel.setText(Adaptable(wd));
 						
-						Sustraction.setSize(50,50);
-						
 					}else if (e.getKeyChar() == '/'){
+						
+						Division.setSize(50,50);
 						
 						wd += "/";
 						TextPanel.setText(Adaptable(wd));
 						
-						Division.setSize(50,50);
-						
 					}else if (e.getKeyChar() == '*'){
+						
+						Multiplication.setSize(50,50);
 						
 						wd += "x";
 						TextPanel.setText(Adaptable(wd));
-						
-						Multiplication.setSize(50,50);
 						
 					}else if (e.getKeyChar() == '^'){
 	
@@ -3736,24 +3737,24 @@ public class CalculadoraCientifica extends JFrame{
 						
 					}else if (e.getKeyChar() == '('){
 						
+						LeftParenthesis.setSize(50,50);
+						
 						wd += "(";
 						TextPanel.setText(Adaptable(wd));
 						
-						LeftParenthesis.setSize(50,50);
-						
 					}else if (e.getKeyChar() == ')'){
+
+						RightParenthesis.setSize(50,50);
 
 						wd += ")";
 						TextPanel.setText(Adaptable(wd));
 						
-						RightParenthesis.setSize(50,50);
-						
 					}else if (e.getKeyChar() == '!'){
+						
+						Factorial.setSize(50,50);
 
 						wd += "!";
 						TextPanel.setText(Adaptable(wd));
-						
-						Factorial.setSize(50,50);
 						
 					}
 					

@@ -1159,10 +1159,13 @@ public class Mayth{
 	public static double ZetaReimann(float s){
 		
 		double zeta=0;
+		int iteracion=1000;
+		
+		if (s%1!=0){iteracion=10;}
 		
 		if (s>1){
 		
-			for (int n=1; n<=1000; n++){
+			for (int n=1; n<=iteracion; n++){
 				
 				zeta += 1d/Potencia(n,s);
 				
